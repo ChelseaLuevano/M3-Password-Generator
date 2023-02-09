@@ -29,9 +29,18 @@ if (userLength < 8 || userLength > 128) {
 // b1. Upper Case 
 
 } else (userLength >=8  && userLength <= 128) 
-{ let upperCase = window.confirm("To include Upper Case Letters in your Password, Enter 'y'; Otherwide, Enter 'N'. ");
-  upperCase();
+{ let upperCase = window.confirm("To include Upper Case Letters in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+  // upperCase();
 }
+// b2. Validate the input
+function upperCase (){
+if (upperCase === true) { 
+  let lowerCase = window.confirm("To include Lower Case Letters in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+  };
+
+// else (upperCase === false)
+}
+ upperCase();
 
 // 2. Validate the input
 
@@ -79,9 +88,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-  
