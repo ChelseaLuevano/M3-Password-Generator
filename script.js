@@ -32,20 +32,20 @@ while ((userLength < 8) || (userLength > 128) || isNaN(userLength)){
 // b.  Prompt user for Upper Case, Lower Case, Numeric, and Special Chracters
 // b1. Upper Case 
 
-  let upperCase = confirm("To include Upper Case Letters in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+  let upperCase = confirm("To include Upper Case Letters in your Password, click 'ok'; Otherwise, click 'cancel'. ");
 
 // b2. Lower Case
 
-  let lowerCase = confirm("To include Lower Case Letters in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+  let lowerCase = confirm("To include Lower Case Letters in your Password, click 'ok'; Otherwise, click 'cancel'. ");
 
 // b3. Numeric prompts
-let numeric = confirm("To include numbers in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+let numeric = confirm("To include numbers in your Password, click 'ok'; Otherwise, click 'cancel'. ");
 
 // b4. Special Character Prompts
 
-let specialCharacters = confirm("To include Special Characters in your Password, click 'ok'; Otherwide, click 'cancel'. ");
+let specialCharacters = confirm("To include Special Characters in your Password, click 'ok'; Otherwise, click 'cancel'. ");
 
-// 3. Generate Password
+// 2. Generate Password
 if (upperCase) {
   possibleCharacters = [...possibleCharacters, ...validUpperCase];
   password += getRandom(validUpperCase);
@@ -70,7 +70,7 @@ for (let i = password.length; i < userLength; i++) {
   password += getRandom(possibleCharacters);
 }
 
-// 4. Display password
+// 3. Display password
   return password
 }
 
